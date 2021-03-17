@@ -110,3 +110,24 @@
   animation-timing-function: linear;
 }
 
+#block4 {
+  position: absolute;
+  background-color: yellow;
+  border: 3px solid gray;
+  animation: move-to-top-right;
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move-to-top-right {
+  from {
+    top: 80%;
+    left: 0;
+  }
+
+  to {
+    left: 80%;
+    top: 0;
+  }
+}
