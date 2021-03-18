@@ -113,7 +113,6 @@
 #block4 {
   position: absolute;
   background-color: yellow;
-  border: 3px solid gray;
   animation: move-to-top-right;
   animation-direction: alternate;
   animation-duration: 1s;
@@ -131,3 +130,38 @@
     top: 0;
   }
 }
+
+#block5 {
+  position: relative;
+  background-color: magenta;
+  top: 10%;
+  left: 60%;
+  animation: disappear-and-turn-to-circle;
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes disappear-and-turn-to-circle {
+  0% {
+    border-radius: 0;
+    opacity: 1
+  }
+
+  33% {
+    border-radius: 0;
+    opacity: 0;
+  }
+
+  66% {
+    border-radius: 100%;
+    opacity: 0;
+  }
+
+  100% {
+    border-radius: 100%;
+    opacity: 1;
+  }
+}
+
+embed { display: none; }
